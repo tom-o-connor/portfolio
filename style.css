@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    font-size: 18px; /* Smaller font size */
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduce space between name and nav */
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.tab-btn {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.tab-btn:hover {
+    border-bottom: 2px solid #333;
+}
+
+.profile-container {
+    margin: 20px auto;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+}
+
+.about {
+    max-width: 500px; /* Makes it more in line with the rest of the page */
+    margin: 20px auto;
+    padding: 15px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+    display: block; /* Ensures it's always visible */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+iframe[src*="spotify.com"] {
+    max-width: 600px; /* Prevents full-width issue */
+    width: 100%;
+    height: 180px; /* Adjust this if needed */
+    display: block;
+    margin: 20px auto; /* Centers the embed */
+}
+
+iframe[src*="soundcloud.com"] {
+    max-width: 600px; /* Prevents full-width issue */
+    width: 100%;
+    height: 180px; /* Adjust this if needed */
+    display: block;
+    margin: 20px auto; /* Centers the embed */
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+.portfolio-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.portfolio-text h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.portfolio-text a {
+    text-decoration: none;
+    color: #333;
+}
+
+.portfolio-text a:hover {
+    color: #0073e6;
+}
+
+.portfolio-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
