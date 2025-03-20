@@ -8,9 +8,9 @@ body {
 
 header {
     text-align: center;
-    font-size: 18px; /* Smaller font size */
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 5px; /* Reduce space between name and nav */
+    margin-bottom: 5px;
 }
 
 nav {
@@ -51,14 +51,14 @@ nav {
 }
 
 .about {
-    max-width: 500px; /* Makes it more in line with the rest of the page */
+    max-width: 500px; /* Makes it more in line with the rest of the page, which was an issue */
     margin: 20px auto;
     padding: 15px;
     background: #e5e5e5;
     border-radius: 10px;
     text-align: center;
     line-height: 1.6;
-    display: block; /* Ensures it's always visible */
+    display: block; /* Ensures it's always visible because it was disappearing with some orientations */
 }
 
 footer {
@@ -71,7 +71,7 @@ footer {
 /* Styling for Class Assignment tab */
 
 .content {
-    max-width: 700px; /* Limits text width for readability */
+    max-width: 700px;
     margin: 20px auto;
     padding: 15px;
     line-height: 1.6;
@@ -84,25 +84,39 @@ h2 {
 
 p {
     font-size: 16px;
-    text-align: justify; /* Improves text alignment */
+    text-align: justify;
+}
+
+.centered-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.image-caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px; 
+    margin-top: 5px; 
 }
 
 /* End of styling for Class Assignment tab */
 
 iframe[src*="spotify.com"] {
-    max-width: 600px; /* Prevents full-width issue */
+    max-width: 600px;
     width: 100%;
-    height: 180px; /* Adjust this if needed */
+    height: 180px;
     display: block;
-    margin: 20px auto; /* Centers the embed */
+    margin: 20px auto; /* Centers the embed, which was a problem */
 }
 
 iframe[src*="soundcloud.com"] {
-    max-width: 600px; /* Prevents full-width issue */
+    max-width: 600px; 
     width: 100%;
-    height: 180px; /* Adjust this if needed */
+    height: 180px; 
     display: block;
-    margin: 20px auto; /* Centers the embed */
+    margin: 20px auto; /* Like above, centers the embed */
 }
 
 .portfolio-item {
