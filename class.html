@@ -20,22 +20,92 @@
 
     <section class="content">
         <h2>1. Article</h2>
-        <p>Body of the article goes here.</p>
+        <p>
+            Chicago has consistently ranked as one of the worst <a href="https://blockclubchicago.org/2024/06/26/chicago-has-5th-worst-traffic-in-the-world-study-finds/#:~:text=CHICAGO%20%E2%80%94%20Chicago%20is%20the%20world's,a%20new%20%E2%80%9Ctraffic%20scorecard.%E2%80%9D">cities</a>  
+            in the world for traffic congestion despite its extensive public transportation network, which is operated by the Chicago Transit Authority (CTA).
+        </p>
+            
+        <p>
+        There were over 309 million rides recorded on the CTA’s bus and rail services in 2024, according to an analysis of relevant data conducted by the Medill News Service.
+        </p>   
+
+            <div class="flourish-embed flourish-chart" data-src="visualisation/22210499"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22210499/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+            <p> 
+                October was the busiest month during the year with more than 30 million CTA rides recorded, the only month to surpass 30 million. 
+            </p>
+
+            <p> 
+                It was nearly 2.5 million more than the second busiest month, September, which saw nearly 28 million rides recorded. 
+            </p>
+
+            <p> 
+                September was closely followed by May and August, with more than 27 million rides recorded on each of those months. January was the only month in 2024 during which there were fewer than 22 million rides recorded.
+            </p>
+
+            <div class="flourish-embed flourish-chart" data-src="visualisation/22210684"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22210684/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+            <p> 
+                Buses accounted for approximately 59% of all rides on CTA services in 2024, with nearly 182 million rides recorded on that mode of transport.
+            </p>
+
+            <p> 
+                Meanwhile, roughly 41% of rides were on rail services, namely the ‘L’ system. This signifies over 127 million of the 309 million rides recorded on CTA in 2024.
+            </p>
+
+            <div class="flourish-embed flourish-chart" data-src="visualisation/22210794"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22210794/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+        
+            <p> 
+                Nearly 16% of all entries to the ‘L’ rail network occurred at six out of the 142 stations that recorded at least one entry in 2024.
+            </p>
+
+            <p> 
+                An “entry” is defined as one pass through a turnstile to enter a station whereas a “ride”, mentioned above, is when someone is considered to have boarded an ‘L’ train. The latter is a “statistically valid estimate,” according to the CTA’s <a href="https://data.cityofchicago.org/api/assets/CCAFA078-D8FC-43EE-8FAA-28007103DA2E?download=true">dictionary</a> for the dataset that was analyzed.
+            </p>
+
+        </p>
 
         <h2>2. Methodology</h2>
-        <p>Explain how the data was analyzed.</p>
+        <p>
+            I sourced the data through the Chicago Data Portal (relevant links below under '3. Datasets'), which I have found to be the most reliable and accessible source for Chicago-related data.
+        </p>
+
+        <p>
+            I decided to CTA data about public transport use because it is a topic that interests me but I have not had an opportunity to examine the data related to it.
+        </p>
+
+        <p>
+            I initially downloaded CSV versions of the entire datasets to get a sense of them and found that they were too dense because some data went back to over 10 years ago. 
+        </p>
+
+        <p>
+            Using the Chicago Data Portal 'Query Data' tool, I filtered both datasets to only include 2024 entries. I then imported both separately to Google Sheets where I cleaned, split the dates and created pivot tables to obtain the results.
+        </p>
 
         <h2>3. Datasets</h2>
 
             <h3> 3.1. CTA Daily Boarding Totals, Chicago Data Portal </h3>
             <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-Daily-Boarding-Totals/6iiy-9s97/about_data>Original</a>,
             <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-Daily-Boarding-Totals/6iiy-9s97/explore/query/SELECT%0A%20%20%60service_date%60%2C%0A%20%20%60day_type%60%2C%0A%20%20%60bus%60%2C%0A%20%20%60rail_boardings%60%2C%0A%20%20%60total_rides%60%0AWHERE%0A%20%20%60service_date%60%0A%20%20%20%20BETWEEN%20%222024-01-01T00%3A00%3A00%22%20%3A%3A%20floating_timestamp%0A%20%20%20%20AND%20%222024-12-31T23%3A59%3A59%22%20%3A%3A%20floating_timestamp%0AORDER%20BY%20%60service_date%60%20DESC%20NULL%20LAST/page/filter>Filtered</a>,
-            <a href= https://docs.google.com/spreadsheets/d/1sLcZ_ISIZgLrGNtxhD7RgMei_JGn-6dC0ObUJIY_EzU/edit?usp=sharing>Cleaned</a>
+            <a href= https://docs.google.com/spreadsheets/d/1sLcZ_ISIZgLrGNtxhD7RgMei_JGn-6dC0ObUJIY_EzU/edit?usp>Cleaned</a>
             
             <h3> 3.2. Daily Entries to CTA 'L' Stations, Chicago Data Portal </h3> 
             <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f/about_data>Original</a>,
             <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f/explore/query/SELECT%20%60station_id%60%2C%20%60stationname%60%2C%20%60date%60%2C%20%60daytype%60%2C%20%60rides%60%0AWHERE%0A%20%20%60date%60%0A%20%20%20%20BETWEEN%20%222024-01-01T00%3A00%3A00%22%20%3A%3A%20floating_timestamp%0A%20%20%20%20AND%20%222024-12-31T23%3A59%3A59%22%20%3A%3A%20floating_timestamp%0AORDER%20BY%20%60date%60%20DESC%20NULL%20LAST/page/filter>Filtered</a>,
-            <a href= https://docs.google.com/spreadsheets/d/1IftbNKAHfuSutJu9DTVQAQLPMGrazpSV97wEZO-iygs/edit?usp=sharing>Cleaned</a>
+            <a href= https://docs.google.com/spreadsheets/d/1IftbNKAHfuSutJu9DTVQAQLPMGrazpSV97wEZO-iygs/edit?usp>Cleaned</a>
+
+        <h2>4. Content Statement</h2>
+        <p>
+        I am interested in a range of industries and occupations but have a particular interest in audio journalism. I have also begun the process of becoming a lawyer in Ireland with a view to specializing in human rights law, which I could hopefully mix with journalism.  
+        </p>
+        
+        <p>
+        My goal for this portfolio is to have a centralized location to store my best journalism work and I'm delighted to now have that opportunity, so thank you for setting this assignment! Beyond that goal, I hope that this portfolio will enhance my appeal to recruiters and those who may be considering giving me a job.
+        </p>
+
+        <p>
+        To fulfil that wider goal, I will focus on displaying a diverse range of the best work I have done across various mediums.
+        </p>
 
     </section>
 
