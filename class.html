@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Assignment | Tom O'Connor</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensures consistent styling -->
+</head>
+<body>
+
+    <header><h1>Tom O'Connor</h1></header>
+
+    <nav>
+        <a href="index.html" class="tab-btn">About</a>
+        <a href="class.html" class="tab-btn">Class Assignment</a>
+        <a href="featured.html" class="tab-btn">Featured</a>
+        <a href="audio.html" class="tab-btn">Audio</a>
+        <a href="articles.html" class="tab-btn">Article Clippings</a>
+    </nav>
+
+    <section class="content">
+        <h2>1. Article</h2>
+        <p>Body of the article goes here.</p>
+
+        <h2>2. Methodology</h2>
+        <p>Explain how the data was analyzed.</p>
+
+        <h2>3. Datasets</h2>
+
+            <h3> 3.1. CTA Daily Boarding Totals, Chicago Data Portal </h3>
+            <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-Daily-Boarding-Totals/6iiy-9s97/about_data>Original</a>,
+            <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-Daily-Boarding-Totals/6iiy-9s97/explore/query/SELECT%0A%20%20%60service_date%60%2C%0A%20%20%60day_type%60%2C%0A%20%20%60bus%60%2C%0A%20%20%60rail_boardings%60%2C%0A%20%20%60total_rides%60%0AWHERE%0A%20%20%60service_date%60%0A%20%20%20%20BETWEEN%20%222024-01-01T00%3A00%3A00%22%20%3A%3A%20floating_timestamp%0A%20%20%20%20AND%20%222024-12-31T23%3A59%3A59%22%20%3A%3A%20floating_timestamp%0AORDER%20BY%20%60service_date%60%20DESC%20NULL%20LAST/page/filter>Filtered</a>,
+            <a href= https://docs.google.com/spreadsheets/d/1sLcZ_ISIZgLrGNtxhD7RgMei_JGn-6dC0ObUJIY_EzU/edit?usp=sharing>Cleaned</a>
+            
+            <h3> 3.2. Daily Entries to CTA 'L' Stations, Chicago Data Portal </h3> 
+            <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f/about_data>Original</a>,
+            <a href= https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f/explore/query/SELECT%20%60station_id%60%2C%20%60stationname%60%2C%20%60date%60%2C%20%60daytype%60%2C%20%60rides%60%0AWHERE%0A%20%20%60date%60%0A%20%20%20%20BETWEEN%20%222024-01-01T00%3A00%3A00%22%20%3A%3A%20floating_timestamp%0A%20%20%20%20AND%20%222024-12-31T23%3A59%3A59%22%20%3A%3A%20floating_timestamp%0AORDER%20BY%20%60date%60%20DESC%20NULL%20LAST/page/filter>Filtered</a>,
+            <a href= https://docs.google.com/spreadsheets/d/1IftbNKAHfuSutJu9DTVQAQLPMGrazpSV97wEZO-iygs/edit?usp=sharing>Cleaned</a>
+
+    </section>
+
+</body>
+</html>

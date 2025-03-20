@@ -68,6 +68,27 @@ footer {
     color: #333;
 }
 
+/* Styling for Class Assignment tab */
+
+.content {
+    max-width: 700px; /* Limits text width for readability */
+    margin: 20px auto;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify; /* Improves text alignment */
+}
+
+/* End of styling for Class Assignment tab */
+
 iframe[src*="spotify.com"] {
     max-width: 600px; /* Prevents full-width issue */
     width: 100%;
