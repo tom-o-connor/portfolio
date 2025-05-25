@@ -13,12 +13,13 @@ header {
     margin-bottom: 5px;
 }
 
+/* For notes about more content at bottom of pages */
 note {
-  margin-top: 40px; /* adds space above the note */
-  padding-bottom: 20px; /* adds space below, so it’s not tight against the edge */
-  text-align: center;   /* optional: centers the text */
-  font-size: 0.9em;     /* optional: makes it slightly smaller if you like */
-  color: #555;          /* optional: gives it a softer gray tone */
+  margin-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 0.9em;     
+  color: #555;
 }
 
 nav {
@@ -93,16 +94,24 @@ iframe[src*="spotify.com"] {
     object-fit: cover;
 }
 
+.social-links {
+display: flex;
+justify-content: center; /* centers them horizontally */
+gap: 10px; /* space between icons */
+margin-bottom: 15px;
+}
+
 .social-links img {
     width: 30px;
     height: 30px;
-    margin-top: 0px;
-    margin-bottom: 8px;
     vertical-align: middle;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 .about {
-    max-width: 490px; /* Makes it more in line with the rest of the page, which was an issue */
+    max-width: 337px; /* Makes it more in line with the rest of the page, which was an issue */
     margin: 0 auto;
     padding: 15px;
     background: #e5e5e5;
