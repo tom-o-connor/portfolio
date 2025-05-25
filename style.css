@@ -13,62 +13,20 @@ header {
     margin-bottom: 5px;
 }
 
+note {
+  margin-top: 40px; /* adds space above the note */
+  padding-bottom: 20px; /* adds space below, so it’s not tight against the edge */
+  text-align: center;   /* optional: centers the text */
+  font-size: 0.9em;     /* optional: makes it slightly smaller if you like */
+  color: #555;          /* optional: gives it a softer gray tone */
+}
+
 nav {
     text-align: center;
     padding: 10px 0;
 }
 
-.tab-btn {
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease-in-out;
-}
-
-.tab-btn:hover {
-    border-bottom: 2px solid #333;
-}
-
-.profile-container {
-    margin: 20px auto;
-}
-
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.social-links img {
-    width: 30px;
-    height: 30px;
-    margin-top: 0px;
-    margin-bottom: 8px;
-    vertical-align: middle;
-}
-
-.about {
-    max-width: 500px; /* Makes it more in line with the rest of the page, which was an issue */
-    margin: 20px auto;
-    padding: 15px;
-    background: #e5e5e5;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 1.6;
-    display: block; /* Ensures it's always visible because it was disappearing with some orientations */
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    color: #333;
-}
-
-/* Styling for Class Assignment tab */
+/* Styling for Data tab */
 
 .content {
     max-width: 700px;
@@ -109,6 +67,56 @@ iframe[src*="spotify.com"] {
     height: 180px;
     display: block;
     margin: 20px auto; /* Centers the embed, which was a problem */
+}
+
+.tab-btn {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.tab-btn:hover {
+    border-bottom: 2px solid #333;
+}
+
+.profile-container {
+    margin: 20px auto;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+}
+
+.about {
+    max-width: 490px; /* Makes it more in line with the rest of the page, which was an issue */
+    margin: 0 auto;
+    padding: 15px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+    display: block; /* Ensures it's always visible because it was disappearing with some orientations */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
 }
 
 iframe[src*="soundcloud.com"] {
