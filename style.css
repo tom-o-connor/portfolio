@@ -113,7 +113,7 @@ margin-bottom: 15px;
 .about {
     max-width: 337px; /* Makes it more in line with the rest of the page, which was an issue */
     margin: 0 auto;
-    padding: 15px;
+    padding: 18px;
     background: #e5e5e5;
     border-radius: 10px;
     text-align: center;
@@ -147,6 +147,10 @@ iframe[src*="soundcloud.com"] {
     max-width: 600px;
 }
 
+.portfolio-text h3 {
+    text-align: left;
+}
+
 .portfolio-img {
     width: 100px;
     height: 100px;
@@ -173,4 +177,29 @@ iframe[src*="soundcloud.com"] {
     margin: 5px 0 0;
     font-size: 14px;
     color: #555;
+}
+
+.pub-name {
+    font-style: italic;
+    color: #666;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 100%;
+    padding: 5%;
+  }
+
+  .bio-box,
+  .content-container,
+  .social-links {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
