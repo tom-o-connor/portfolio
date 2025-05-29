@@ -203,3 +203,17 @@ iframe[src*="soundcloud.com"] {
     height: auto;
   }
 }
+
+/* To avoid clustering of tabs on mobile */
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    font-size: 14px; /* Reduce font size slightly */
+  }
+
+  nav ul li {
+    padding: 6px 10px; /* Slightly tighter padding */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+}
