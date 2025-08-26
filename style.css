@@ -73,7 +73,7 @@ iframe[src*="spotify.com"] {
 .portfolio-text p a {
   color: blue;                /* classic hyperlink blue */
   text-decoration: underline; /* underline hyperlinks in descriptions*/
-  font-size: 16px;            /* same size as paragraph text */
+  font: inherit;            /* same size as paragraph text */
 }
 
 .tab-btn {
