@@ -85,8 +85,14 @@ iframe[src*="spotify.com"] {
     transition: border-bottom 0.3s ease-in-out;
 }
 
+/* to show black line when hovering over tab name */
 .tab-btn:hover {
     border-bottom: 2px solid #333;
+}
+
+/* to keep black line when in the page */
+.tab-btn.active {
+  border-bottom: 2px solid #333; 
 }
 
 .profile-container {
