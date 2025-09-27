@@ -124,10 +124,6 @@ iframe[src*="soundcloud.com"] {
     max-width: 600px;
 }
 
-.portfolio-text h3 {
-    text-align: left;
-}
-
 .portfolio-img {
     width: 100px;
     height: 100px;
@@ -139,6 +135,7 @@ iframe[src*="soundcloud.com"] {
 .portfolio-text h3 {
     margin: 0;
     font-size: 18px;
+    text-align: left;
 }
 
 .portfolio-text a {
@@ -154,12 +151,14 @@ iframe[src*="soundcloud.com"] {
     margin: 5px 0 0;
     font-size: 14px;
     color: #555;
+    text-align: left;
 }
 
 .pub-name {
     font-style: italic;
     color: #666;
     margin: 4px 0;
+    text-align: left;
 }
 
 @media screen and (max-width: 600px) {
