@@ -69,7 +69,7 @@ iframe[src*="spotify.com"] {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center top;
+    object-position: 50% 35%;
 }
 
 .social-links {
