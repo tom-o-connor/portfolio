@@ -180,10 +180,48 @@ iframe[src*="soundcloud.com"] {
   }
 }
 
+/* Sample below bio blurb */
+
 .featured-work h2 {
     font-size: 20px;
     margin: 30px 0 10px;
     color: #333;
+}
+
+/* Sample in current bio blurb */
+
+.featured-samples {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+}
+
+.featured-label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.featured-samples ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featured-samples li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.featured-samples a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.featured-samples a:hover {
+    color: #0073e6;
 }
 
 /* To avoid clustering of tabs on mobile */
