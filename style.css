@@ -35,12 +35,6 @@ iframe[src*="spotify.com"] {
     margin: 20px auto; /* Centers the embed, which was a problem */
 }
 
-.portfolio-text p a {
-  color: blue;                /* classic hyperlink blue */
-  text-decoration: underline; /* underline hyperlinks in descriptions*/
-  font: inherit;            /* same size as paragraph text */
-}
-
 .tab-btn {
     padding: 8px 12px;
     text-decoration: none;
@@ -111,15 +105,15 @@ margin-bottom: 10px;
     margin: 5px 0 0;
     font-size: 14px;
     color: #555;
-    text-align: left;
+    text-align: center;
     font-style: italic;
-
 }
 
 .featured-text h4 {
     margin: 0;
     font-size: 18px;
     text-align: center;
+    text-decoration: underline;
 }
 
 .featured-text b {
@@ -185,6 +179,12 @@ iframe[src*="soundcloud.com"] {
     font-size: 14px;
     color: #555;
     text-align: left;
+}
+
+.portfolio-text p a {
+  color: blue;                /* classic hyperlink blue */
+  text-decoration: underline; /* underline hyperlinks in descriptions*/
+  font: inherit;            /* same size as paragraph text */
 }
 
 .pub-name {
