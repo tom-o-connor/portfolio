@@ -109,20 +109,23 @@ margin-bottom: 10px;
     font-style: italic;
 }
 
-.featured-text h4 {
-    margin: 0;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: underline;
-    color: #333;
-}
-
 .featured-text b {
     text-decoration: none;
     color: #333;
 }
 
-.featured-text b:hover {
+.featured-text h4 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.featured-text h4 a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.featured-text a:hover {
     color: #0073e6;
 }
 
