@@ -98,6 +98,14 @@ margin-bottom: 15px;
     display: block; /* Ensures it's always visible because it was disappearing with some orientations */
 }
 
+/* Featured on main page */
+
+.featured h2 {
+    font-size: 10px;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
 footer {
     text-align: center;
     padding: 15px;
@@ -178,14 +186,6 @@ iframe[src*="soundcloud.com"] {
     max-width: 100%;
     height: auto;
   }
-}
-
-/* Featured on main page */
-
-.featured h2 {
-    font-size: 20px;
-    margin: 15px 0 10px;
-    color: #333;
 }
 
 /* To avoid clustering of tabs on mobile */
