@@ -75,7 +75,7 @@ iframe[src*="spotify.com"] {
 display: flex;
 justify-content: center; /* centers them horizontally */
 gap: 10px; /* space between icons */
-margin-bottom: 15px;
+margin-bottom: 10px;
 }
 
 .social-links img {
@@ -101,8 +101,10 @@ margin-bottom: 15px;
 /* Featured on main page */
 
 .featured h2 {
-    font-size: 10px;
+    font-size: 20px;
     margin: 15px 0 10px;
+    text-align: center;
+    font-style: italic;
     color: #333;
 }
 
