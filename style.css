@@ -180,6 +180,12 @@ iframe[src*="soundcloud.com"] {
   }
 }
 
+.featured-work h2 {
+    font-size: 20px;
+    margin: 30px 0 10px;
+    color: #333;
+}
+
 /* To avoid clustering of tabs on mobile */
 @media (max-width: 600px) {
   nav ul {
